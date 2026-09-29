@@ -1,0 +1,13 @@
+node_modules/
+frontend/node_modules/
+backend/node_modules/
+frontend/dist/
+backend/uploads/*
+!backend/uploads/.gitkeep
+backend/.local-db/
+.env
+.env.*
+!.env.example
+.DS_Store
+npm-debug.log*
+ShelfSight AI 1/

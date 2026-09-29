@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Redirecting | ShelfSight</title>
+    <script>
+      const segments = window.location.pathname.split('/').filter(Boolean);
+      const basePath = segments.length ? `/${segments[0]}/` : '/';
+      const route = segments.slice(1).join('/') + window.location.search + window.location.hash;
+      window.location.replace(`${basePath}?redirect=${encodeURIComponent(route)}`);
+    </script>
+  </head>
+  <body></body>
+</html>
